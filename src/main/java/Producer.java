@@ -23,8 +23,10 @@ import java.util.concurrent.atomic.AtomicLong;
 
 public class Producer {
 
-    static String[] users = Utils.GetUsersFromFile();
-    static String[] arns = Utils.GetARNsFromFile();
+//    static String[] users = Utils.GetUsersFromFile();
+//    static String[] arns = Utils.GetARNsFromFile();
+    static String[] users = Utils.SetUsers();
+    static String[] arns = Utils.SetARNs();
 
 
     private static final Logger log = LoggerFactory.getLogger(Producer.class);
