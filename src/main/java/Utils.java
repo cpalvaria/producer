@@ -72,15 +72,10 @@ public class Utils {
                 String line = scanner.nextLine();
                 if(line.contains("Username")){
                     line = line.replaceAll("\"", "").replace(",", "").replace("Username: ", "");
-                    sb.append(line + " ");
+                    sb.append(line.trim() + " ");
                 }
             }
             usernames = sb.toString().split(" ");
-            System.out.println(usernames[0]);
-            System.out.println(usernames[1]);
-            System.out.println(usernames[2]);
-            System.out.println(usernames[3]);
-            System.out.println(usernames[4]);
 
             return usernames;
         } catch (FileNotFoundException e) {
@@ -100,7 +95,7 @@ public class Utils {
                 String line = scanner.nextLine();
                 if(line.contains("Arn")){
                     line = line.replaceAll("\"", "").replace("Arn: ", "");
-                    sb.append(line + " ");
+                    sb.append(line.trim() + " ");
                 }
             }
             arns = sb.toString().split(" ");
