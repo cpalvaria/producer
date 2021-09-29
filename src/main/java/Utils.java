@@ -76,15 +76,11 @@ public class Utils {
                 }
             }
             usernames = sb.toString().split(" ");
-            System.out.println(usernames.length);
-            System.out.println(usernames.length);
-            System.out.println(usernames.length);
-            System.out.println(usernames.length);
-            System.out.println(usernames.length);
-            System.out.println(usernames.length);
-            System.out.println(usernames.length);
-            System.out.println(usernames.length);
-            System.out.println(usernames.length);
+            System.out.println(usernames[0]);
+            System.out.println(usernames[1]);
+            System.out.println(usernames[2]);
+            System.out.println(usernames[3]);
+            System.out.println(usernames[4]);
 
             return usernames;
         } catch (FileNotFoundException e) {
