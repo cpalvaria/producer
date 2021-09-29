@@ -25,8 +25,6 @@ public class Producer {
 
     static String[] users = Utils.GetUsersFromFile();
     static String[] arns = Utils.GetARNsFromFile();
-//    static String[] users = Utils.SetUsers();
-//    static String[] arns = Utils.SetARNs();
 
 
     private static final Logger log = LoggerFactory.getLogger(Producer.class);
@@ -95,8 +93,6 @@ public class Producer {
         final Runnable putOneRecord = new Runnable() {
             @Override
             public void run() {
-//                String[] users = Utils.SetUsers();
-//                String[] arns = Utils.SetARNs();
 
                 String ctr = Utils.generateCTR(sequenceNumber.get(), arns, users);
 

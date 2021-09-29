@@ -107,40 +107,6 @@ public class Utils {
         return null;
     }
 
-    public static String[] SetUsers(){
-        String[] accountUsername;
-        try {
-            BufferedReader reader = new BufferedReader(new FileReader("src/main/java/users.txt"));
-            String users = reader.readLine();
-
-            accountUsername = users.split("\\s+");
-            System.out.println(accountUsername[0]);
-            return accountUsername;
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return null;
-    }
-
-    public static String[] SetARNs(){
-        String[] accountARNs;
-        try {
-            BufferedReader reader = new BufferedReader(new FileReader("src/main/java/arn.txt"));
-            String arns = reader.readLine();
-
-            accountARNs = arns.split("\\s+");
-            System.out.println(accountARNs[0]);
-            return accountARNs;
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return null;
-    }
-
     public static String generateCTR(long input, String[] accountARN, String[] accountUsername) {
 
         int accountInfoRandom = new Random().nextInt(accountARN.length);
